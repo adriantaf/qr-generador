@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Generador de Codigos QR</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="hd-header">
+		<div class="cont-elementos">
+			<span class="hd-logo">Quick Response</span>
+			<a href="https://github.com/adriantaf/qr-generador" class="hd-link-repisotorio">
+				<i class="nf nf-fa-github"></i>
+			</a>
+		</div>
+	</header>
+	<main class="mn-main">
+		<div class="cont-elementos">
+			<input 
+				type="text" 
+				id="txt-contenido" 
+				class="input"
+				placeholder="Ingrese texto o una URL">
+			<button id="btn-generar-codigo" class="boton boton--generar">
+				Generar 
+				<i class="nf nf-fa-qrcode"></i>
+			</button>
+			<img id="img-codigo-qr" class="img-codigo-qr" alt="Codigo QR generado">
+			<small id="lbl-mensaje">Valor: Esto es acac</small>
+			<a id="btn-descargar-imagen" class="boton boton--descargar">
+				Descargar
+				<i class="nf nf-oct-download"></i>			 
+			</a>
+		</div>
+	</main>
+
+	<footer class="ft-footer">
+		<div class="cont-elementos">
+			<small class="ft-text-small">Desarrollador por: <a class="ft-link-autor" href="https://github.com/adriantaf" target="_blank" rel="noopener noreferrer">Adrian Tafoya</a></small>
+			<hr>
+			<small class="ft-text-small">Se utiliza la biblioteca <a class="ft-link-biblioteca" href="https://github.com/neocotic/qrious" target="_blank" rel="noopener noreferrer">QRious</a> para generar codigos QR</small>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="./qrious.min.js"></script>
+	<script src="./app.js"></script>	
+</body>
+</html>
